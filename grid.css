@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  padding: 20px;
+}
+
+h3, h4 {
+  padding: 20px 30px 20px 30px;
+}
+
+.demo {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.demo>div:nth-child(1) {
+  background-color: aqua;
+}
+
+.demo>div:nth-child(2) {
+  background-color: aquamarine;
+}
+
+.demo>div:nth-child(3) {
+  background-color: bisque;
+}
+
+.demo>div:nth-child(4) {
+  background-color: blueviolet;
+}
+
+.demo>div:nth-child(5) {
+  background-color: chocolate;
+}
+
+.demo>div:nth-child(6) {
+  background-color: darkgreen;
+}
+
+.demo>div:nth-child(7) {
+  background-color: darkred;
+}
+
+.demo>div:nth-child(8) {
+  background-color: goldenrod;
+}
+
+.demo>div:nth-child(9) {
+  background-color: hotpink;
+}
+
+.demo1 {
+  display: grid;
+  text-align: center;
+  line-height: 100px;
+  width: 300px;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(auto-fill, 100px);
+}
+
+.demo6 {
+  grid-auto-flow: row dense;
+}
+
+.demo1Item1, .demo1Item2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.demo2 {
+  display: grid;
+  text-align: center;
+  height: 300px;
+  line-height: 100px;
+  width: 300px;
+  grid-template-columns: repeat(2, 80px 100px 20px);
+  grid-template-rows: repeat(3, 33.33%);
+  grid-auto-flow: column;
+}
+
+.demo3 {
+  display: grid;
+  text-align: center;
+  height: 300px;
+  line-height: 100px;
+  width: 780px;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-rows: 100px auto;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.demo4 {
+  display: grid;
+  text-align: center;
+  height: 400px;
+  line-height: 100px;
+  width: 300px;
+  grid-template-columns: [c1] 100px [c2] 1fr [c3] 2fr;
+  grid-template-rows: 100px 1fr minmax(100px, 1fr);
+  gap: 20px 20px;
+}
+
+.demo5 {
+  display: grid;
+  width: 400px;
+  justify-content: space-between;
+  grid-template-columns: 100px 100px 100px;
+  /* grid-template-rows: 100px 100px 100px; */
+  grid-auto-rows: 50px;
+}
